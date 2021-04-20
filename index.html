@@ -118,6 +118,8 @@ Fengjiongmax
             
 
             
+                
+            
 
             
                 
@@ -127,6 +129,15 @@ Fengjiongmax
             
             
             <a class="navbar-item" href="#about">About</a>
+            
+            
+            
+            
+            
+                
+                
+                <a class="navbar-item" href="/#blog">Blog</a>
+                
             
             
             
@@ -148,6 +159,8 @@ Fengjiongmax
             
 
             
+            <a class="navbar-item" href="https://im404.me/index.xml"><i class="fas fa-rss"></i></a>
+            
             
         </div>
     </nav>
@@ -162,6 +175,8 @@ Fengjiongmax
         
         
 
+        
+            
         
 
         
@@ -215,6 +230,55 @@ Fengjiongmax
         <div class="container">
             <hr>
         </div>
+        
+        
+        
+        
+        
+        
+        
+            
+            
+<div class="section" id="blog">
+    
+    <div class="container">
+        
+        <h2 class="title is-2 has-text-centered">Latest Post</h2>
+            
+            <div class="summary">Apr 20, 2021
+                <h3 class="title is-3 latest-post-title"><a href="https://im404.me/blog/iso3d-2d_1/">Isometric 3D in 2D environment #1 Project Setup and Basic Calculation</a></h3>
+                    <div class="markdown">
+                    I&rsquo;ve released a game called Ladder Box, it&rsquo;s a 3D puzzle game that is all programmed in a 2D environment.
+  You can check it out here
+Folks on Reddit curious how I make this, I tried to briefly describe the overall idea of how to make this happen but did not dive deep, and now I&rsquo;m gonna tell you guys how I make this work.
+I&rsquo;m using Godot Engine in this series, but you can skip the engine-specific part (scripting, scene building) and do it in other engines/frameworks, and I highly encourage you to do so.
+                    
+                    <a href="https://im404.me/blog/iso3d-2d_1/">Read more</a>
+                    
+                    </div>
+            </div>
+            
+        
+    </div>
+</div>
+    
+        <div class="container has-text-centered top-pad">
+            <a href="https://im404.me/blog/">All Posts</a>
+        </div>
+    
+
+
+<div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+
+
+<div class="container"><hr></div>
+
+
         
         
         
@@ -364,7 +428,7 @@ if (!doNotTrack) {
         
         <script>
             function update_localtime() {
-                const time = new Date().toLocaleTimeString('en-US', { timeZone: 'America\/Los_Angeles', timeStyle: 'short' });
+                const time = new Date().toLocaleTimeString('en-US', { timeZone: '', timeStyle: 'short' });
                 document.getElementById('time').innerHTML = time;
             }
             update_localtime();

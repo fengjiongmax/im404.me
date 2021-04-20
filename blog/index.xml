@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fengjiongmax</title>
-    <link>https://im404.me/</link>
-    <description>Recent content on fengjiongmax</description>
+    <title>Blog on fengjiongmax</title>
+    <link>https://im404.me/blog/</link>
+    <description>Recent content in Blog on fengjiongmax</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Apr 2021 01:46:59 +0800</lastBuildDate><atom:link href="https://im404.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 01:46:59 +0800</lastBuildDate><atom:link href="https://im404.me/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Isometric 3D in 2D environment #1 Project Setup and Basic Calculation</title>
       <link>https://im404.me/blog/iso3d-2d_1/</link>
@@ -17,24 +17,6 @@
   You can check it out here
 Folks on Reddit curious how I make this, I tried to briefly describe the overall idea of how to make this happen but did not dive deep, and now I&amp;rsquo;m gonna tell you guys how I make this work.
 I&amp;rsquo;m using Godot Engine in this series, but you can skip the engine-specific part (scripting, scene building) and do it in other engines/frameworks, and I highly encourage you to do so.</description>
-    </item>
-    
-    <item>
-      <title>Ladder Box</title>
-      <link>https://im404.me/projects/ladderbox/</link>
-      <pubDate>Tue, 20 Apr 2021 21:45:34 +0800</pubDate>
-      
-      <guid>https://im404.me/projects/ladderbox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Godot Class Reference</title>
-      <link>https://im404.me/projects/godotclassreference/</link>
-      <pubDate>Tue, 20 Apr 2021 21:38:56 +0800</pubDate>
-      
-      <guid>https://im404.me/projects/godotclassreference/</guid>
-      <description></description>
     </item>
     
   </channel>
