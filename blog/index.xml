@@ -17,7 +17,7 @@
   
 You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
 Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
-Limit user input In the last 5 part of this series, we&amp;rsquo;ve made all the states working, but we did not limit user input when the movable are moving, so this could happen:</description>
+Limit user input In the last 5 part of this series, we&amp;rsquo;ve made all the states working, but we did not limit user input when the movable are moving, so this could happen(I&amp;rsquo;m hitting a,z,x,s randomly):</description>
     </item>
     
     <item>

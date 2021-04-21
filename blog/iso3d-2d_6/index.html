@@ -253,9 +253,9 @@ Isometric 3 D in 2 D Environment #6 Movement Adjusting - fengjiongmax
 <p>Godot 3.2.x is used in this project, you can check the commits for what&rsquo;s new in each part of this series.</p>
 
 <h1 id="limit-userinput" class="anchor-link"><a href="#limit-userinput">Limit user input</a></h1>
-<p>In the last 5 part of this series, we&rsquo;ve made all the states working, but we did not limit user input when the movable are moving, so this could happen:</p>
-<p><img src="/img/iso3D-2D-6th/no_limit_input.gif" alt="">
-I&rsquo;m hitting a,z,x,s randomlyWe should be processing user input when all movables are in idle state, let&rsquo;s do this.
+<p>In the last 5 part of this series, we&rsquo;ve made all the states working, but we did not limit user input when the movable are moving, so this could happen(I&rsquo;m hitting a,z,x,s randomly):</p>
+<p><img src="/img/iso3D-2D-6th/no_limit_input.gif" alt=""></p>
+<p>We should be processing user input when all movables are in idle state, let&rsquo;s do this.
 Just add these code at the beginning of <code>send_command</code> function in main.gd:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">func</span> send_command(command:<span style="color:#a6e22e">Vector3</span>) <span style="color:#f92672">-&gt;</span> void:
 	<span style="color:#66d9ef">var</span> _idle_count:<span style="color:#a6e22e">int</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
@@ -280,7 +280,7 @@ new_unmovable(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2
 new_unmovable(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">0</span>)
 </code></pre></div><p>And you will see this:
 <img src="/img/iso3D-2D-6th/idle_to_fall.gif" alt=""></p>
-<p>We need to check if movable can fall in idle, add this to the end of the _command in idle.gd:</p>
+<p>We need to check if movable can fall in idle, add this to the end of the <code>_command</code> in <code>idle.gd</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">elif</span> _msg<span style="color:#f92672">.</span>keys()<span style="color:#f92672">.</span>has(<span style="color:#e6db74">&#34;reach_target&#34;</span>):
     <span style="color:#66d9ef">if</span> Grid<span style="color:#f92672">.</span>coordinate_within_rangev(movable<span style="color:#f92672">.</span>game_pos <span style="color:#f92672">+</span> <span style="color:#a6e22e">Vector3</span><span style="color:#f92672">.</span>DOWN) <span style="color:#f92672">&amp;&amp;</span>\
     Grid<span style="color:#f92672">.</span>get_game_axisv(movable<span style="color:#f92672">.</span>game_pos <span style="color:#f92672">+</span> <span style="color:#a6e22e">Vector3</span><span style="color:#f92672">.</span>DOWN) <span style="color:#f92672">==</span> null:
