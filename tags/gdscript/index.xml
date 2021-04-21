@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GDScript on fengjiongmax</title>
+    <link>https://im404.me/tags/gdscript/</link>
+    <description>Recent content in GDScript on fengjiongmax</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Apr 2021 09:38:05 +0800</lastBuildDate><atom:link href="https://im404.me/tags/gdscript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Isometric 3D in 2D Environment #6 Movement adjusting</title>
+      <link>https://im404.me/blog/iso3d-2d_6/</link>
+      <pubDate>Wed, 21 Apr 2021 11:56:27 +0800</pubDate>
+      
+      <guid>https://im404.me/blog/iso3d-2d_6/</guid>
+      <description>This is part 5 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
+  
+You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
+Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
+Limit user input In the last 5 part of this series, we&amp;rsquo;ve made all the states working, but we did not limit user input when the movable are moving, so this could happen:</description>
+    </item>
+    
+    <item>
+      <title>Isometric 3D in 2D Environment #5 More order and move sync</title>
+      <link>https://im404.me/blog/iso3d-2d_5/</link>
+      <pubDate>Wed, 21 Apr 2021 10:55:58 +0800</pubDate>
+      
+      <guid>https://im404.me/blog/iso3d-2d_5/</guid>
+      <description>This is part 5 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
+  
+You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
+Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
+The problem If you set the board like this:
+new_movable(0,1,0) new_movable(0,0,0) new_movable(0,0,1) new_movable(1,0,0) run the game and hit ‘Z’, you’ll see: the one V3(0,0,0) will stay still, but this is not what we want, so let’s figure out how this happened and how to solve this.</description>
+    </item>
+    
+    <item>
+      <title>Isometric 3D in 2D Environment #4 Fall and jump</title>
+      <link>https://im404.me/blog/iso3d-2d_4/</link>
+      <pubDate>Wed, 21 Apr 2021 10:41:11 +0800</pubDate>
+      
+      <guid>https://im404.me/blog/iso3d-2d_4/</guid>
+      <description>I&amp;rsquo;ve released a game called Ladder Box, it&amp;rsquo;s a 3D puzzle game that is all programmed in a 2D environment.
+  
+You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
+Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
+Jump state When a movable has a block at its same height in its moving direction, that movable will switch to the jump state.</description>
+    </item>
+    
+    <item>
+      <title>Isometric 3D in 2D Environment #3 Make Blocks Move</title>
+      <link>https://im404.me/blog/iso3d-2d_3/</link>
+      <pubDate>Wed, 21 Apr 2021 09:55:30 +0800</pubDate>
+      
+      <guid>https://im404.me/blog/iso3d-2d_3/</guid>
+      <description>I&amp;rsquo;ve released a game called Ladder Box, it&amp;rsquo;s a 3D puzzle game that is all programmed in a 2D environment.
+  
+You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
+Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
+Clean up Before we make more changes to movable and unmovable scripts:
+name movable Movable and add every movable to group &amp;ldquo;movable&amp;rdquo;:</description>
+    </item>
+    
+    <item>
+      <title>Isometric 3D in 2D Environment #2 Texure Render Order</title>
+      <link>https://im404.me/blog/iso3d-2d_2/</link>
+      <pubDate>Wed, 21 Apr 2021 09:52:22 +0800</pubDate>
+      
+      <guid>https://im404.me/blog/iso3d-2d_2/</guid>
+      <description>I&amp;rsquo;ve released a game called Ladder Box, it&amp;rsquo;s a 3D puzzle game that is all programmed in a 2D environment.
+  
+You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
+Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
+Problem In the first article, we know that we must create new blocks in order, otherwise it&amp;rsquo;ll have some weird render like this:</description>
+    </item>
+    
+    <item>
+      <title>Isometric 3D in 2D environment #1 Project Setup and Basic Calculation</title>
+      <link>https://im404.me/blog/iso3d-2d_1/</link>
+      <pubDate>Tue, 20 Apr 2021 22:53:04 +0800</pubDate>
+      
+      <guid>https://im404.me/blog/iso3d-2d_1/</guid>
+      <description>I&amp;rsquo;ve released a game called Ladder Box, it&amp;rsquo;s a 3D puzzle game that is all programmed in a 2D environment.
+  
+Folks on Reddit curious how I make this, I tried to briefly describe the overall idea of how to make this happen but did not dive deep, and now I&amp;rsquo;m gonna tell you guys how I make this work.
+I&amp;rsquo;m using Godot Engine in this series, but you can skip the engine-specific part (scripting, scene building) and do it in other engines/frameworks, and I highly encourage you to do so.</description>
+    </item>
+    
+  </channel>
+</rss>

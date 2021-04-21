@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+Isometric 3 D in 2 D Environment #2 Texure Render Order - fengjiongmax
+</title>
+
+
+
+        
+        <meta property="og:title" content="Isometric 3D in 2D Environment #2 Texure Render Order - fengjiongmax" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content=""/>
+<meta property="og:url" content="https://im404.me/blog/iso3d-2d_2/"/>
+<meta property="og:site_name" content="fengjiongmax"/>
+
+
+
+
+<meta property="og:image" content="https://im404.me/home/avatar.png"/>
+
+
+
+
+        
+<link rel="shortcut icon" href="/img/fav.ico">
+
+
+        
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.4a4491185af10b954e6b52118eb4e5102f9c12886169abe610804d5b095c965a.css" integrity="sha256-SkSRGFrxC5VOa1IRjrTlEC&#43;cEohhaavmEIBNWwlcllo=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+        
+        
+        
+        
+    </head>
+    <body>
+        <section id="top" class="section">
+            
+            <div class="container hero ">
+                
+
+<h1 class="bold-title is-1">Blog</h1>
+
+
+            </div>
+            
+            <div class="section ">
+                
+<div class="container">
+    <hr>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu " id="navMenu">
+            
+            
+            
+            
+            <a class="navbar-item" href="/">main</a>
+            
+
+            
+            
+
+            
+                
+            
+
+            
+                
+            
+
+            
+            
+            
+            <a class="navbar-item" href="/#about">About</a>
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                  <a class="navbar-item" href="https://im404.me/blog/">
+                  
+                  Back to Blog
+                  
+                  </a>
+                
+                
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                  <a class="navbar-item" href="https://im404.me/projects/">
+                  
+                  
+                  Projects
+                  
+                  
+                  </a>
+                
+                
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+
+            
+            <a class="navbar-item" href="https://im404.me/index.xml"><i class="fas fa-rss"></i></a>
+            
+            
+        </div>
+    </nav>
+    <hr>
+</div>
+
+
+
+                
+<div class="container">
+    <h2 class="title is-1 top-pad strong-post-title">
+        <a href="https://im404.me/blog/iso3d-2d_2/">Isometric 3D in 2D Environment #2 Texure Render Order</a>
+    </h2>
+    <div class="post-data">
+        Apr 21, 2021 |
+        3 minutes read
+    </div>
+    
+    <div class="blog-share">
+        Share this:
+        
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Isometric%203D%20in%202D%20Environment%20%232%20Texure%20Render%20Order%20https%3a%2f%2fim404.me%2fblog%2fiso3d-2d_2%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fab fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+        
+        
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fim404.me%2fblog%2fiso3d-2d_2%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fab fa-facebook-f"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+        
+        
+        <a class="icon-pinterest" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fim404.me%2fblog%2fiso3d-2d_2%2f&amp;description=Isometric%203D%20in%202D%20Environment%20%232%20Texure%20Render%20Order" onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+            <i class="fab fa-pinterest-p"></i>
+            <span class="hidden">Pinterest</span>
+        </a>
+        
+    </div>
+    
+    
+      
+      
+     <p>
+         Categories: 
+          
+           <a href="/categories/ladder_box">
+             Ladder_Box</a>
+         
+        </p>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      
+     <p>
+         Series: 
+          
+           <a href="/series/3d_iso_in_2d">
+             3D_iso_in_2D</a>
+         
+        </p>
+      
+    
+      
+      
+     <p>
+         Tags: 
+          
+           <a href="/tags/godot_engine">
+             Godot_Engine</a>,
+         
+           <a href="/tags/tutorial">
+             Tutorial</a>,
+         
+           <a href="/tags/gdscript">
+             GDScript</a>,
+         
+           <a href="/tags/ladder_box">
+             Ladder_Box</a>
+         
+        </p>
+      
+    
+      
+    
+</div>
+
+<div class="container markdown top-pad">
+    <p>I&rsquo;ve released a game called Ladder Box, it&rsquo;s a 3D puzzle game that is all programmed in a 2D environment.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/-PINYXwhEkc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><a href="https://store.steampowered.com/app/1444390/Ladder_Box/"><img src="/img/steam.png" alt="get it on steam"></a></p>
+<p>You can find all the textures, scripts in this GitHub repo: <a href="https://github.com/fengjiongmax/3D_iso_in_2D">https://github.com/fengjiongmax/3D_iso_in_2D</a></p>
+<p>Godot 3.2.x is used in this project, you can check the commits for what&rsquo;s new in each part of this series.</p>
+
+<h1 id="problem" class="anchor-link"><a href="#problem">Problem</a></h1>
+<p>In the first article, we know that we must create new blocks in order, otherwise it&rsquo;ll have some weird render like this:<br>
+<img src="/img/iso3D-2D-1st/wrong_render.png" alt="weird render"></p>
+<p>What can we do if we want to create blocks however we want, without worrying about the order we create those blocks?</p>
+<p>The key is the render order, letting the engine know which one should be on top of another, as the concept of the layer in Gimp or Photoshop.</p>
+
+<h1 id="render-order" class="anchor-link"><a href="#render-order">Render Order</a></h1>
+<p>Imagine you are looking at a Rubik&rsquo;s Cube like so</p>
+<p><img src="/img/iso3D-2D-2nd/rubikscube.png" alt="just made this in Blender"></p>
+<p>You can tell which one is the top one, and the one that under them, let&rsquo;s write some numbers on this picture.</p>
+<p><img src="/img/iso3D-2D-2nd/number_rubikscube.png" alt="layer order"></p>
+<p>Let me explain what this picture means, the block has <code>1</code> on it means it should be on top of all blocks, and blocks have <code>2</code> which means they render under the block with <code>1</code> but above all others, and <code>3</code> should be under <code>2</code> and <code>1</code> but above all others, and it goes on.</p>
+<p>Let&rsquo;s try to do this in Godot. In Node2D there&rsquo;s a property called <code>z_index</code> :</p>
+<blockquote>
+<p>Z index. Controls the order in which the nodes render. A node with a higher Z index will display in front of others.</p>
+</blockquote>
+<p>Everything that inherits <code>Node2D</code> will have this property.</p>
+<p>So in the picture, the block marks <code>1</code> should have the highest <code>z_index</code>, and its coordinates are <code>V3(3,3,3)</code>.</p>
+<p>We can calculate it this way:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#34;1&#34;</span> : V3<span style="color:#f92672">(</span>3,3,3<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; 3+3+3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span> <span style="color:#f92672">[</span> z_index <span style="color:#f92672">=</span> 9<span style="color:#f92672">]</span>
+<span style="color:#e6db74">&#34;2&#34;</span> : V3<span style="color:#f92672">(</span>2,3,3,<span style="color:#f92672">)</span>/V3<span style="color:#f92672">(</span>3,2,3<span style="color:#f92672">)</span>/V3<span style="color:#f92672">(</span>3,3,2<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>&gt; 2+3+3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">[</span> z_index <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">]</span>
+and the rest goes on
+</code></pre></div>
+<h1 id="write-thecode" class="anchor-link"><a href="#write-thecode">Write the code</a></h1>
+<p>First, let&rsquo;s also calculate z_index in our GridUtils.game_to_engine:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">func</span> game_to_engine(x:<span style="color:#a6e22e">int</span>,y:<span style="color:#a6e22e">int</span>,z:<span style="color:#a6e22e">int</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">Vector3</span>:
+    <span style="color:#66d9ef">var</span> _rtn_2d <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vector2</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>)
+    _rtn_2d <span style="color:#f92672">+=</span> x<span style="color:#f92672">*</span>SINGLE_X
+    _rtn_2d <span style="color:#f92672">+=</span> z<span style="color:#f92672">*</span>SINGLE_Z
+    _rtn_2d <span style="color:#f92672">+=</span> y<span style="color:#f92672">*</span>SINGLE_Y
+    <span style="color:#66d9ef">var</span> _z <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span>y<span style="color:#f92672">+</span>z
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Vector3</span>(_rtn_2d<span style="color:#f92672">.</span>x,_rtn_2d<span style="color:#f92672">.</span>y,_z)
+</code></pre></div><p>and add this variable:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">onready</span> <span style="color:#66d9ef">var</span> SINGLE_Y <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vector2</span>(<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span>texture_h<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) <span style="color:#f92672">*</span> TEXTURE_SCALE
+</code></pre></div><p>Then, let&rsquo;s have a base class for all the blocks so that we don&rsquo;t have to write the same code for both movable and unmovable.</p>
+<p><img src="/img/iso3D-2D-2nd/block_base.png" alt="block base class"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">class_name BlockBase
+<span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Sprite</span>
+<span style="color:#66d9ef">var</span> game_pos:<span style="color:#a6e22e">Vector3</span>
+
+<span style="color:#66d9ef">func</span> _ready():
+    <span style="color:#66d9ef">pass</span>
+
+<span style="color:#66d9ef">func</span> set_game_pos(x:<span style="color:#a6e22e">int</span>,y:<span style="color:#a6e22e">int</span>,z:<span style="color:#a6e22e">int</span>):
+    game_pos <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vector3</span>(x,y,z)
+    <span style="color:#66d9ef">var</span> engine_pos <span style="color:#f92672">=</span> Grid<span style="color:#f92672">.</span>game_to_engine(x,y,z)
+    self<span style="color:#f92672">.</span>position <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vector2</span>(engine_pos<span style="color:#f92672">.</span>x,engine_pos<span style="color:#f92672">.</span>y)
+    self<span style="color:#f92672">.</span>z_index <span style="color:#f92672">=</span> engine_pos<span style="color:#f92672">.</span>z
+    <span style="color:#66d9ef">pass</span>
+<span style="color:#66d9ef">func</span> set_game_posv3(new_pos:<span style="color:#a6e22e">Vector3</span>):
+    set_game_pos(<span style="color:#a6e22e">int</span>(new_pos<span style="color:#f92672">.</span>x),<span style="color:#a6e22e">int</span>(new_pos<span style="color:#f92672">.</span>y),<span style="color:#a6e22e">int</span>(new_pos<span style="color:#f92672">.</span>z))
+    <span style="color:#66d9ef">pass</span>
+</code></pre></div><p>then attach a script for both our movable and unmovable:
+<img src="/img/iso3D-2D-2nd/script_for_blocks.png" alt="script for blocks"></p>
+<p>both have the same content:</p>
+<pre><code class="language-gscript" data-lang="gscript">extends BlockBase
+func _ready():
+    pass
+</code></pre><p>and in our main.gd:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#75715e"># scripts/main.gd</span>
+<span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Node2D</span>
+<span style="color:#66d9ef">const</span> movable <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://scenes/movable.tscn&#34;</span>)
+<span style="color:#66d9ef">const</span> unmovable <span style="color:#f92672">=</span> preload(<span style="color:#e6db74">&#34;res://scenes/unmovable.tscn&#34;</span>)
+<span style="color:#66d9ef">onready</span> <span style="color:#66d9ef">var</span> grid_texture <span style="color:#f92672">=</span> load(<span style="color:#e6db74">&#34;res://textures/grid.png&#34;</span>)
+<span style="color:#66d9ef">func</span> _ready():
+    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>):
+        <span style="color:#66d9ef">for</span> z <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>):
+            <span style="color:#f92672">$</span>floor_tile<span style="color:#f92672">.</span>set_cell(x,z,<span style="color:#ae81ff">0</span>)
+    <span style="color:#66d9ef">pass</span>
+    <span style="color:#75715e"># you can add blocks however you want ,but might got something weird.</span>
+    new_movable(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>)
+    new_movable(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>)
+    new_unmovable(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>)
+    <span style="color:#66d9ef">pass</span>
+<span style="color:#66d9ef">func</span> new_movable(x,y,z):
+    <span style="color:#66d9ef">var</span> _m <span style="color:#f92672">=</span> movable<span style="color:#f92672">.</span>instance()
+    <span style="color:#f92672">$</span>movable<span style="color:#f92672">.</span>add_child(_m)
+    _m<span style="color:#f92672">.</span>set_game_pos(x,y,z)
+    <span style="color:#66d9ef">pass</span>
+<span style="color:#66d9ef">func</span> new_unmovable(x,y,z):
+    <span style="color:#66d9ef">var</span> _u <span style="color:#f92672">=</span> unmovable<span style="color:#f92672">.</span>instance()
+    <span style="color:#f92672">$</span>unmovable<span style="color:#f92672">.</span>add_child(_u)
+    _u<span style="color:#f92672">.</span>set_game_pos(x,y,z)
+    <span style="color:#66d9ef">pass</span>
+</code></pre></div><p>What I&rsquo;ve changed:</p>
+<ul>
+<li>make both movable and unmovable a preload resource
+use function from block_base to set position</li>
+</ul>
+<p>now if we run the scene:
+<img src="/img/iso3D-2D-2nd/1st_test.png" alt="first test"></p>
+<p>even if we change the order :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">new_movable(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>)
+new_movable(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>)
+</code></pre></div><p><img src="/img/iso3D-2D-2nd/2nd_test.png" alt="second test">
+we have the correct render.</p>
+<p>Again, you can check the code here:<a href="https://github.com/fengjiongmax/3D_iso_in_2D">https://github.com/fengjiongmax/3D_iso_in_2D</a></p>
+<p>This part requires some abstract and mathematical knowledge, if you have questions, let me know in the comments.</p>
+
+</div>
+
+
+    <div class="container disqus">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fjmax" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+
+
+                
+                <div class="container">
+    <hr>
+</div>
+<div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+<div class="container">
+    <hr>
+</div>
+
+                <div class="section" id="footer">
+    <div class="container has-text-centered">
+    
+        <span class="footer-text">
+            <a href="https://github.com/victoriadrake/hugo-theme-introduction/"><strong>Introduction</strong></a> theme for <a href="http://gohugo.io/">Hugo</a>. Made with <a href="https://victoria.dev"><!-- raw HTML omitted --><!-- raw HTML omitted --> and <!-- raw HTML omitted --><!-- raw HTML omitted --></a> by open source contributors.
+        </span>
+    
+    </div>
+</div>
+
+                
+            </div>
+        </section>
+        
+        
+
+
+<script src="https://im404.me/js/bundle.2ee571453a8980175e10bda96bda797cc9c4e2e745e488df68d50cef5deb57ff.js" integrity="sha256-LuVxRTqJgBdeEL2pa9p5fMnE4udF5IjfaNUM713rV/8="></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-KPT6VZPK03', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+        
+        
+        
+        
+    </body>
+</html>
