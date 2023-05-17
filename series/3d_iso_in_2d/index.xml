@@ -14,7 +14,6 @@
       
       <guid>https://im404.me/blog/iso3d-2d_6/</guid>
       <description>This is part 6 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
-  
 You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
 Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
 Limit user input In the last 5 part of this series, we&amp;rsquo;ve made all the states working, but we did not limit user input when the movable are moving, so this could happen(I&amp;rsquo;m hitting a,z,x,s randomly):</description>
@@ -27,7 +26,6 @@ Limit user input In the last 5 part of this series, we&amp;rsquo;ve made all th
       
       <guid>https://im404.me/blog/iso3d-2d_5/</guid>
       <description>This is part 5 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
-  
 You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
 Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
 The problem If you set the board like this:
@@ -41,7 +39,6 @@ new_movable(0,1,0) new_movable(0,0,0) new_movable(0,0,1) new_movable(1,0,0) run 
       
       <guid>https://im404.me/blog/iso3d-2d_4/</guid>
       <description>This is part 4 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
-  
 You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
 Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
 Jump state When a movable has a block at its same height in its moving direction, that movable will switch to the jump state.</description>
@@ -54,7 +51,6 @@ Jump state When a movable has a block at its same height in its moving direction
       
       <guid>https://im404.me/blog/iso3d-2d_3/</guid>
       <description>This is part 3 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
-  
 You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
 Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
 Clean up Before we make more changes to movable and unmovable scripts:
@@ -68,7 +64,6 @@ name movable Movable and add every movable to group &amp;ldquo;movable&amp;rdquo
       
       <guid>https://im404.me/blog/iso3d-2d_2/</guid>
       <description>This is part 2 of the 2d/3d(game/engine) conversion used in my puzzle game: Ladder Box, which is available on Steam:
-  
 You can find all the textures, scripts in this GitHub repo: https://github.com/fengjiongmax/3D_iso_in_2D
 Godot 3.2.x is used in this project, you can check the commits for what&amp;rsquo;s new in each part of this series.
 Problem In the first article, we know that we must create new blocks in order, otherwise it&amp;rsquo;ll have some weird render like this:</description>
@@ -81,7 +76,6 @@ Problem In the first article, we know that we must create new blocks in order, o
       
       <guid>https://im404.me/blog/iso3d-2d_1/</guid>
       <description>I&amp;rsquo;ve released a game called Ladder Box, it&amp;rsquo;s a 3D puzzle game that is all programmed in a 2D environment.
-  
 Folks on Reddit curious how I make this, I tried to briefly describe the overall idea of how to make this happen but did not dive deep, and now I&amp;rsquo;m gonna tell you guys how I make this work.
 I&amp;rsquo;m using Godot Engine in this series, but you can skip the engine-specific part (scripting, scene building) and do it in other engines/frameworks, and I highly encourage you to do so.</description>
     </item>
